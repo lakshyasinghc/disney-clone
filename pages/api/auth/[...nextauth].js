@@ -11,6 +11,7 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  secret:process.env.JWT_SECRET,
   adapter: FirestoreAdapter({
     apiKey: process.env.FIREBASE_API_KEY,
     appId: process.env.FIREBASE_APP_ID,
